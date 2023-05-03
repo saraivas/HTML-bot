@@ -1,0 +1,938 @@
+version: "3.1"
+
+rules:
+
+- rule: sempre que falar que esta mais ou menos
+  steps:
+  - intent: mood_so
+  - action: utter_mood_so
+
+- rule: foto do gatinho
+  condition:
+  - active_loop: null  # condição para verificar se não há um loop ativo
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- rule: greet response
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: dizer tchau sempre q receber um intencao de dar tchau
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: great response 
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- rule: dizer  o que é html
+  steps:
+  - intent: O_que_é_html?
+  - action: utter_O_que_é_html?
+
+- rule: mostrar um exemplo de documento hmlt simples
+  steps:
+  - intent: Um_documento_HTML_simples
+  - action: utter_Um_documento_HTML_simples
+
+- rule: explicar o que sao elementos html
+  steps:
+  - intent: O_que_é_um_elemento_HTML?
+  - action: utter_O_que_é_um_elemento_HTML?
+
+- rule: explicar a estrutura basica da pagina html
+  steps:
+  - intent: Estrutura_da_página_HTML
+  - action: utter_Estrutura_da_página_HTML
+
+- rule: contextualizar a historia do html
+  steps:
+  - intent: HTML_HISTÓRIA
+  - action: utter_HTML_HISTÓRIA
+
+- rule: tudo sobre como fazer um comentario
+  steps:
+  - intent: Tag_de_comentário_html
+  - action: utter_Tag_de_comentário_html
+
+- rule: como adicionar comentarios
+  steps:
+  - intent: Adicione_comentários
+  - action: utter_Adicione_comentários
+
+- rule: como ocultar algum conteudo
+  steps:
+  - intent: Ocultar_conteúdo
+  - action: utter_Ocultar_conteúdo
+
+- rule: como ocultar conteudo embutido dentro do texto
+  steps:
+  - intent: Ocultar_conteúdo_embutido
+  - action: utter_Ocultar_conteúdo_embutido
+
+- rule: explicando o que é css
+  steps:
+  - intent: O_que_é_CSS?
+  - action: utter_O_que_é_CSS?
+
+- rule: como usar o css 
+  steps:
+  - intent: Usando_CSS
+  - action: utter_Usando_CSS
+
+- rule: css embutido na tag
+  steps:
+  - intent: CSS_embutido
+  - action: utter_CSS_embutido
+
+- rule: css interno no arquivo
+  steps:
+  - intent: CSS_interno
+  - action: utter_CSS_interno
+
+- rule: css em arquivo interno
+  steps:
+  - intent: CSS_externo
+  - action: utter_CSS_externo
+
+- rule: cores no css , tamanho e fontes
+  steps:
+  - intent: Cores_CSS,_fontes_e_tamanhos
+  - action: utter_Cores_CSS,_fontes_e_tamanhos
+
+- rule: Fronteira do CSS
+  steps:
+  - intent: Fronteira_do_CSS
+  - action: utter_Fronteira_do_CSS
+
+- rule: CSS_preenchimento
+  steps:
+  - intent: CSS_preenchimento
+  - action: utter_CSS_preenchimento
+
+- rule: Margem_CSS
+  steps:
+  - intent: Margem_CSS
+  - action: utter_Margem_CSS
+
+- rule: Link_para_CSS_externo
+  steps:
+  - intent: Link_para_CSS_externo
+  - action: utter_Link_para_CSS_externo
+
+- rule: Resumo_do_capítulo
+  steps:
+  - intent: Resumo_do_capítulo
+  - action: utter_Resumo_do_capítulo
+
+- rule: Exercício_2
+  steps:
+  - intent: Exercício_2
+  - action: utter_Exercício_2
+
+- rule: Tags_de_estilo_HTML
+  steps:
+  - intent: Tags_de_estilo_HTML
+  - action: utter_Tags_de_estilo_HTML
+
+- rule: Links_HTML_-_Hiperlinks
+  steps:
+  - intent: Links_HTML_-_Hiperlinks
+  - action: utter_Links_HTML_-_Hiperlinks
+
+- rule: Links_html_-_sintaxe
+  steps:
+  - intent: Links_html_-_sintaxe
+  - action: utter_Links_html_-_sintaxe
+
+- rule: Links_HTML_-_o_atributo_de_destino
+  steps:
+  - intent: Links_HTML_-_o_atributo_de_destino
+  - action: utter_Links_HTML_-_o_atributo_de_destino
+
+- rule: URLs_absolutos_vs._URLs_relativos
+  steps:
+  - intent: URLs_absolutos_vs._URLs_relativos
+  - action: utter_URLs_absolutos_vs._URLs_relativos
+
+- rule: Links_HTML_-_Use_uma_imagem_como_um_link
+  steps:
+  - intent: Links_HTML_-_Use_uma_imagem_como_um_link
+  - action: utter_Links_HTML_-_Use_uma_imagem_como_um_link
+
+- rule: Link_para_um_endereço_de_e_-mail
+  steps:
+  - intent: Link_para_um_endereço_de_e_-mail
+  - action: utter_Link_para_um_endereço_de_e_-mail
+
+- rule: Botão_como_um_link
+  steps:
+  - intent: Botão_como_um_link
+  - action: utter_Botão_como_um_link
+
+- rule: Títulos_de_link
+  steps:
+  - intent: Títulos_de_link
+  - action: utter_Títulos_de_link
+
+- rule: Mais_sobre_URLs_absolutos_e_URLs_relativos
+  steps:
+  - intent: Mais_sobre_URLs_absolutos_e_URLs_relativos
+  - action: utter_Mais_sobre_URLs_absolutos_e_URLs_relativos
+
+- rule: Resumo_do_capítulo_2
+  steps:
+  - intent: Resumo_do_capítulo_2
+  - action: utter_Resumo_do_capítulo_2
+
+- rule: Tags_de_link_HTML
+  steps:
+  - intent: Tags_de_link_HTML
+  - action: utter_Tags_de_link_HTML
+
+- rule: Parágrafos_HTML
+  steps:
+  - intent: Parágrafos_HTML
+  - action: utter_Parágrafos_HTML
+
+- rule: Display_html
+  steps:
+  - intent: Display_html
+  - action: utter_Display_html
+
+- rule: regra
+  steps:
+  - intent: Regras_horizontais_HTML
+  - action: utter_Regras_horizontais_HTML
+
+- rule: Regras_horizontais_HTML
+  steps:
+  - intent: Quebras_de_linha_HTML
+  - action: utter_Quebras_de_linha_HTML
+
+- rule: O_problema_do_poema
+  steps:
+  - intent: O_problema_do_poema
+  - action: utter_O_problema_do_poema
+
+- rule: Solução_-_o_elemento_html_<pre>
+  steps:
+  - intent: Solução_-_o_elemento_html_<pre>
+  - action: utter_Solução_-_o_elemento_html_<pre>
+
+- rule: Exercício_3
+  steps:
+  - intent: Exercício_3
+  - action: utter_Exercício_3
+
+- rule: Referência_de_tag_html
+  steps:
+  - intent: Referência_de_tag_html
+  - action: utter_Referência_de_tag_html
+
+- rule: Atributos_HTML
+  steps:
+  - intent: Atributos_HTML
+  - action: utter_Atributos_HTML
+
+- rule: O_atributo_href
+  steps:
+  - intent: O_atributo_href
+  - action: utter_O_atributo_href
+
+- rule: O_atributo_src
+  steps:
+  - intent: O_atributo_src
+  - action: utter_O_atributo_src
+
+- rule: Os_atributos_de_largura_e_altura
+  steps:
+  - intent: Os_atributos_de_largura_e_altura
+  - action: utter_Os_atributos_de_largura_e_altura
+
+- rule: O_atributo_alt
+  steps:
+  - intent: O_atributo_alt
+  - action: utter_O_atributo_alt
+
+- rule: O_atributo_de_estilo
+  steps:
+  - intent: O_atributo_de_estilo
+  - action: utter_O_atributo_de_estilo
+
+- rule: O_atributo_lang
+  steps:
+  - intent: O_atributo_lang
+  - action: utter_O_atributo_lang
+
+- rule: O_atributo_do_título
+  steps:
+  - intent: O_atributo_do_título
+  - action: utter_O_atributo_do_título
+   
+
+- rule: Sugerimos:_sempre_use_atributos_minúsculos
+  steps:
+  - intent: Sugerimos:_sempre_use_atributos_minúsculos
+  - action: utter_Sugerimos:_sempre_use_atributos_minúsculos
+  
+
+- rule: Sugerimos:_sempre_citar_valores_de_atributo
+  steps:
+  - intent: Sugerimos:_sempre_citar_valores_de_atributo
+  - action: utter_Sugerimos:_sempre_citar_valores_de_atributo
+  
+
+- rule: Citações_únicas_ou_duplas?
+  steps:
+  - intent: Citações_únicas_ou_duplas?
+  - action: utter_Citações_únicas_ou_duplas?  
+
+- rule: Resumo_do_capítulo_3
+  steps:
+  - intent: Resumo_do_capítulo_3
+  - action: utter_Resumo_do_capítulo_3
+  
+
+- rule: Exercício_4
+  steps:
+  - intent: Exercício_4
+  - action: utter_Exercício_4
+  
+
+- rule: Referência_de_atributo_HTML
+  steps:
+  - intent: Referência_de_atributo_HTML
+  - action: utter_Referência_de_atributo_HTML
+  
+
+- rule: Titular_2
+  steps:
+  - intent: Titular_2
+  - action: utter_Titular_2
+  
+
+- rule: Cabeças_de_HTML
+  steps:
+  - intent: Cabeças_de_HTML
+  - action: utter_Cabeças_de_HTML
+  
+
+- rule: Os_títulos_são_importantes
+  steps:
+  - intent: Os_títulos_são_importantes
+  - action: utter_Os_títulos_são_importantes
+  
+
+- rule: Títulos_maiores
+  steps:
+  - intent: Títulos_maiores
+  - action: utter_Títulos_maiores
+  
+
+- rule: Exercício_5
+  steps:
+  - intent: Exercício_5
+  - action: utter_Exercício_5
+  
+
+- rule: Referência_de_tag_html_2
+  steps:
+  - intent: Referência_de_tag_html_2
+  - action: utter_Referência_de_tag_html_2
+  
+
+- rule: Elementos_html
+  steps:
+  - intent: Elementos_html
+  - action: utter_Elementos_html
+  
+
+- rule: Elementos_HTML_aninhados
+  steps:
+  - intent: Elementos_HTML_aninhados
+  - action: utter_Elementos_HTML_aninhados
+  
+
+- rule: Nunca_pule_a_etiqueta_final
+  steps:
+  - intent: Nunca_pule_a_etiqueta_final
+  - action: utter_Nunca_pule_a_etiqueta_final
+  
+
+- rule: Elementos_HTML_vazios
+  steps:
+  - intent: Elementos_HTML_vazios
+  - action: utter_Elementos_HTML_vazios
+  
+
+- rule: HTML_não_é_sensível_ao_caso
+  steps:
+  - intent: HTML_não_é_sensível_ao_caso
+  - action: utter_HTML_não_é_sensível_ao_caso
+  
+
+- rule: Referência_de_tag_html_3
+  steps:
+  - intent: Referência_de_tag_html_3
+  - action: utter_Referência_de_tag_html_3
+  
+
+- rule: O_atributo_de_estilo_html
+  steps:
+  - intent: O_atributo_de_estilo_html
+  - action: utter_O_atributo_de_estilo_html
+  
+
+- rule: Cor_de_fundo
+  steps:
+  - intent: Cor_de_fundo
+  - action: utter_Cor_de_fundo
+  
+
+- rule: Cor_do_texto
+  steps:
+  - intent: Cor_do_texto
+  - action: utter_Cor_do_texto
+  
+
+- rule: Fontes
+  steps:
+  - intent: Fontes
+  - action: utter_Fontes
+  
+
+- rule: Tamanho_do_texto
+  steps:
+  - intent: Tamanho_do_texto
+  - action: utter_Tamanho_do_texto
+  
+
+- rule: Alinhamento_de_texto
+  steps:
+  - intent: Alinhamento_de_texto
+  - action: utter_Alinhamento_de_texto
+  
+
+- rule: Resumo_do_capítulo_4
+  steps:
+  - intent: Resumo_do_capítulo_4
+  - action: utter_Resumo_do_capítulo_4
+  
+
+- rule: Exercício_6
+  steps:
+  - intent: Exercício_6
+  - action: utter_Exercício_6
+  
+
+- rule: Documentos_HTML
+  steps:
+  - intent: Documentos_HTML
+  - action: utter_Documentos_HTML
+  
+
+- rule: A_declaração_<!_Doctype>
+  steps:
+  - intent: A_declaração_<!_Doctype>
+  - action: utter_A_declaração_<!_Doctype>
+  
+
+- rule: Cabeças_de_HTML_2
+  steps:
+  - intent: Cabeças_de_HTML_2
+  - action: utter_Cabeças_de_HTML_2
+  
+
+- rule: Parágrafos_HTML_2
+  steps:
+  - intent: Parágrafos_HTML_2
+  - action: utter_Parágrafos_HTML_2
+  
+
+- rule: Links_HTML
+  steps:
+  - intent: Links_HTML
+  - action: utter_Links_HTML
+  
+
+- rule: Imagens_HTML
+  steps:
+  - intent: Imagens_HTML
+  - action: utter_Imagens_HTML
+  
+
+- rule: Como_ver_a_fonte_HTML
+  steps:
+  - intent: Como_ver_a_fonte_HTML
+  - action: utter_Como_ver_a_fonte_HTML
+  
+
+- rule: Elementos_de_formatação_HTML
+  steps:
+  - intent: Elementos_de_formatação_HTML
+  - action: utter_Elementos_de_formatação_HTML
+  
+
+- rule: Html_<b>_e_<strong>_elementos
+  steps:
+  - intent: Html_<b>_e_<strong>_elementos
+  - action: utter_Html_<b>_e_<strong>_elementos
+  
+- rule: Html_<i>_e_<em>_elementos
+  steps:
+  - intent: Html_<i>_e_<em>_elementos
+  - action: utter_Html_<i>_e_<em>_elementos
+  
+
+- rule: Elemento_html_<mall>
+  steps:
+  - intent: Elemento_html_<mall>
+  - action: utter_Elemento_html_<mall>
+  
+
+- rule: Elemento_html_<sk>
+  steps:
+  - intent: Elemento_html_<sk>
+  - action: utter_Elemento_html_<sk>
+  
+
+- rule: Elemento_html_<del>
+  steps:
+  - intent: Elemento_html_<del>
+  - action: utter_Elemento_html_<del>
+  
+
+- rule: Elemento_html_<ins>
+  steps:
+  - intent: Elemento_html_<ins>
+  - action: utter_Elemento_html_<ins>
+
+- rule: Elemento_html_<subs>
+  steps:
+  - intent: Elemento_html_<subs>
+  - action: utter_Elemento_html_<subs>
+  
+
+- rule: Elemento_html_<pup>
+  steps:
+  - intent: Elemento_html_<pup>
+  - action: utter_Elemento_html_<pup>
+  
+
+- rule: Exercício_7
+  steps:
+  - intent: Exercício_7
+  - action: utter_Exercício_7
+  
+
+- rule: Elementos_de_formatação_de_texto_html
+  steps:
+  - intent: Elementos_de_formatação_de_texto_html
+  - action: utter_Elementos_de_formatação_de_texto_html
+  
+
+- rule: Imagens_html_sintaxe
+  steps:
+  - intent: Imagens_html_sintaxe
+  - action: utter_Imagens_html_sintaxe
+  
+
+- rule: O_atributo_src_2
+  steps:
+  - intent: O_atributo_src_2
+  - action: utter_O_atributo_src_2
+  
+
+- rule: O_atributo_alt_2
+  steps:
+  - intent: O_atributo_alt_2
+  - action: utter_O_atributo_alt_2
+  
+
+- rule: Tamanho_da_imagem_-_largura_e_altura
+  steps:
+  - intent: Tamanho_da_imagem_-_largura_e_altura
+  - action: utter_Tamanho_da_imagem_-_largura_e_altura
+  
+
+- rule: Largura_e_altura,_ou_estilo?
+  steps:
+  - intent: Largura_e_altura,_ou_estilo?
+  - action: utter_Largura_e_altura,_ou_estilo?
+
+- rule: Imagens_em_outra_pasta
+  steps:
+  - intent: Imagens_em_outra_pasta
+  - action: utter_Imagens_em_outra_pasta
+  
+
+- rule: Imagens_em_outro_servidor_site
+  steps:
+  - intent: Imagens_em_outro_servidor_site
+  - action: utter_Imagens_em_outro_servidor_site
+  
+
+- rule: Imagens_animadas
+  steps:
+  - intent: Imagens_animadas
+  - action: utter_Imagens_animadas
+  
+
+- rule: Imagem_como_um_link
+  steps:
+  - intent: Imagem_como_um_link
+  - action: utter_Imagem_como_um_link
+  
+
+- rule: Imagem_flutuante
+  steps:
+  - intent: Imagem_flutuante
+  - action: utter_Imagem_flutuante
+  
+
+- rule: Formatos_de_imagem_comuns
+  steps:
+  - intent: Formatos_de_imagem_comuns
+  - action: utter_Formatos_de_imagem_comuns
+  
+
+- rule: Resumo_do_capítulo_5
+  steps:
+  - intent: Resumo_do_capítulo_5
+  - action: utter_Resumo_do_capítulo_5
+
+- rule: Exercício_8
+  steps:
+  - intent: Exercício_8
+  - action: utter_Exercício_8
+  
+
+- rule: Tags_de_imagem_HTML
+  steps:
+  - intent: Tags_de_imagem_HTML
+  - action: utter_Tags_de_imagem_HTML
+  
+
+- rule: Imagem_de_fundo_em_um_elemento_HTML
+  steps:
+  - intent: Imagem_de_fundo_em_um_elemento_HTML
+  - action: utter_Imagem_de_fundo_em_um_elemento_HTML
+  
+
+- rule: Imagem_de_fundo_em_uma_página
+  steps:
+  - intent: Imagem_de_fundo_em_uma_página
+  - action: utter_Imagem_de_fundo_em_uma_página
+  
+
+- rule: fundo_de_repetição
+  steps:
+  - intent: fundo_de_repetição
+  - action: utter_fundo_de_repetição
+  
+
+- rule: Tampa_de_fundo
+  steps:
+  - intent: Tampa_de_fundo
+  - action: utter_Tampa_de_fundo
+  
+
+- rule: Alongamento_de_fundo
+  steps:
+  - intent: Alongamento_de_fundo
+  - action: utter_Alongamento_de_fundo
+  
+
+- rule: Saiba_mais_CSS
+  steps:
+  - intent: Saiba_mais_CSS
+  - action: utter_Saiba_mais_CSS
+  
+
+- rule: Tag_html_tag
+  steps:
+  - intent: Tag_html_tag
+  - action: utter_Tag_html_tag
+  
+
+- rule: Defina_uma_tabela_HTML
+  steps:
+  - intent: Defina_uma_tabela_HTML
+  - action: utter_Defina_uma_tabela_HTML
+  
+
+- rule: Células_da_tabela
+  steps:
+  - intent: Células_da_tabela
+  - action: utter_Células_da_tabela
+  
+
+- rule: Linhas_de_tabela
+  steps:
+  - intent: Linhas_de_tabela
+  - action: utter_Linhas_de_tabela
+  
+
+- rule: Cabeçalhos_de_mesa
+  steps:
+  - intent: Cabeçalhos_de_mesa
+  - action: utter_Cabeçalhos_de_mesa
+  
+
+- rule: Exercício_9
+  steps:
+  - intent: Exercício_9
+  - action: utter_Exercício_9
+  
+
+- rule: Tags_de_tabela_HTML
+  steps:
+  - intent: Tags_de_tabela_HTML
+  - action: utter_Tags_de_tabela_HTML
+  
+
+- rule: Como_adicionar_uma_fronteira
+  steps:
+  - intent: Como_adicionar_uma_fronteira
+  - action: utter_Como_adicionar_uma_fronteira
+  
+
+- rule: Fronteiras_de_mesa_em_colapso
+  steps:
+  - intent: Fronteiras_de_mesa_em_colapso
+  - action: utter_Fronteiras_de_mesa_em_colapso
+  
+
+- rule: Bordas_de_mesa_de_estilo
+  steps:
+  - intent: Bordas_de_mesa_de_estilo
+  - action: utter_Bordas_de_mesa_de_estilo
+  
+
+- rule: Bordas_de_mesa_redonda
+  steps:
+  - intent: Bordas_de_mesa_redonda
+  - action: utter_Bordas_de_mesa_redonda
+  
+
+- rule: Fronteiras_de_mesa_pontilhadas
+  steps:
+  - intent: Fronteiras_de_mesa_pontilhadas
+  - action: utter_Fronteiras_de_mesa_pontilhadas
+  
+
+- rule: Cor_da_borda
+  steps:
+  - intent: Cor_da_borda
+  - action: utter_Cor_da_borda
+  
+
+- rule: Largura_da_tabela_HTML
+  steps:
+  - intent: Largura_da_tabela_HTML
+  - action: utter_Largura_da_tabela_HTML
+  
+
+- rule: Largura_da_coluna_da_tabela_HTML
+  steps:
+  - intent: Largura_da_coluna_da_tabela_HTML
+  - action: utter_Largura_da_coluna_da_tabela_HTML
+  
+
+- rule: Altura_da_linha_da_tabela_html
+  steps:
+  - intent: Altura_da_linha_da_tabela_html
+  - action: utter_Altura_da_linha_da_tabela_html
+
+  
+
+- rule: Exercício_10
+  steps:
+  - intent: Exercício_10
+  - action: utter_Exercício_10
+  
+
+- rule: Cabeçalhos_de_tabela_HTML
+  steps:
+  - intent: Cabeçalhos_de_tabela_HTML
+  - action: utter_Cabeçalhos_de_tabela_HTML
+  
+
+- rule: Cabeçalhos_de_mesa_vertical
+  steps:
+  - intent: Cabeçalhos_de_mesa_vertical
+  - action: utter_Cabeçalhos_de_mesa_vertical
+  
+
+- rule: Alinhe_os_cabeçalhos_da_mesa
+  steps:
+  - intent: Alinhe_os_cabeçalhos_da_mesa
+  - action: utter_Alinhe_os_cabeçalhos_da_mesa
+  
+
+- rule: Cabeçalho_para_várias_colunas
+  steps:
+  - intent: Cabeçalho_para_várias_colunas
+  - action: utter_Cabeçalho_para_várias_colunas
+  
+
+- rule: Legenda_da_mesa
+  steps:
+  - intent: Legenda_da_mesa
+  - action: utter_Legenda_da_mesa
+  
+
+- rule: Exercício_11
+  steps:
+  - intent: Exercício_11
+  - action: utter_Exercício_11
+  
+
+- rule: Tabela_HTML_-_preenchimento_de_células
+  steps:
+  - intent: Tabela_HTML_-_preenchimento_de_células
+  - action: utter_Tabela_HTML_-_preenchimento_de_células
+  
+
+- rule: Tabela_HTML_-_Espaçamento_de_células
+  steps:
+  - intent: Tabela_HTML_-_Espaçamento_de_células
+  - action: utter_Tabela_HTML_-_Espaçamento_de_células
+  
+
+- rule: Tabela_HTML_-_Colspan
+  steps:
+  - intent: Tabela_HTML_-_Colspan
+  - action: utter_Tabela_HTML_-_Colspan
+  
+
+- rule: Tabela_HTML_-_lúcteos
+  steps:
+  - intent: Tabela_HTML_-_lúcteos
+  - action: utter_Tabela_HTML_-_lúcteos
+  
+
+- rule: Exercício_12
+  steps:
+  - intent: Exercício_12
+  - action: utter_Exercício_12
+  
+
+- rule: Usando_o_atributo_de_classe
+  steps:
+  - intent: Usando_o_atributo_de_classe
+  - action: utter_Usando_o_atributo_de_classe
+  
+
+- rule: A_sintaxe_para_aula
+  steps:
+  - intent: A_sintaxe_para_aula
+  - action: utter_A_sintaxe_para_aula
+  
+
+- rule: Várias_classes
+  steps:
+  - intent: Várias_classes
+  - action: utter_Várias_classes
+  
+
+- rule: Elementos_diferentes_podem_compartilhar_a_mesma_classe
+  steps:
+  - intent: Elementos_diferentes_podem_compartilhar_a_mesma_classe
+  - action: utter_Elementos_diferentes_podem_compartilhar_a_mesma_classe
+  
+
+- rule: Uso_do_atributo_de_classe_em_JavaScript
+  steps:
+  - intent: Uso_do_atributo_de_classe_em_JavaScript
+  - action: utter_Uso_do_atributo_de_classe_em_JavaScript
+  
+
+- rule: Resumo_do_capítulo_6
+  steps:
+  - intent: Resumo_do_capítulo_6
+  - action: utter_Resumo_do_capítulo_6
+  
+
+- rule: Exercício_13
+  steps:
+  - intent: Exercício_13
+  - action: utter_Exercício_13
+  
+
+- rule: Usando_o_atributo_de_identificação
+  steps:
+  - intent: Usando_o_atributo_de_identificação
+  - action: utter_Usando_o_atributo_de_identificação
+  
+
+- rule: Diferença_entre_classe_e_id
+  steps:
+  - intent: Diferença_entre_classe_e_id
+  - action: utter_Diferença_entre_classe_e_id
+  
+
+- rule: Marcadores_HTML_com_ID_e_links
+  steps:
+  - intent: Marcadores_HTML_com_ID_e_links
+  - action: utter_Marcadores_HTML_com_ID_e_links
+  
+
+- rule: Exemplo
+  steps:
+  - intent: Exemplo
+  - action: utter_Exemplo
+  
+
+- rule: Usando_o_atributo_de_identificação_em_javascript
+  steps:
+  - intent: Usando_o_atributo_de_identificação_em_javascript
+  - action: utter_Usando_o_atributo_de_identificação_em_javascript
+  
+
+- rule: Resumo_do_capítulo_7
+  steps:
+  - intent: Resumo_do_capítulo_7
+  - action: utter_Resumo_do_capítulo_7
+  
+
+- rule: Exercício_14
+  steps:
+  - intent: Exercício_14
+  - action: utter_Exercício_14
+  
+
+- rule: Tabela_html_-_listras_de_zebra
+  steps:
+  - intent: Tabela_html_-_listras_de_zebra
+  - action: utter_Tabela_html_-_listras_de_zebra
+  
+
+- rule: Tabela_html_-_listras_verticais_de_zebra
+  steps:
+  - intent: Tabela_html_-_listras_verticais_de_zebra
+  - action: utter_Tabela_html_-_listras_verticais_de_zebra
+  
+
+- rule: Combine_listras_de_zebra_verticais_e_horizontais
+  steps:
+  - intent: Combine_listras_de_zebra_verticais_e_horizontais
+  - action: utter_Combine_listras_de_zebra_verticais_e_horizontais
+  
+
+- rule: Divisores_horizontais
+  steps:
+  - intent: Divisores_horizontais
+  - action: utter_Divisores_horizontais
+  
+
+- rule: Tabela_em_paurna
+  steps:
+  - intent: Tabela_em_paurna
+  - action: utter_Tabela_em_paurna
+  

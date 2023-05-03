@@ -1,0 +1,1078 @@
+version: "3.1"
+
+nlu:
+  - intent: mood_so
+    examples: |
+      - mais ou menos
+      - nem sei
+      - nao sei
+      - sei lá
+      - num sei
+
+  - intent: cheer_up
+    examples: |
+      - estou triste
+      - muito triste
+
+  - intent: greet
+    examples: |
+      - Olá
+      - eae
+      - Oii
+      - Bom dia
+      - Boa tarde
+      - Boa noite
+      - Vamos começar
+      - Fala comigo
+
+  - intent: goodbye
+    examples: |
+      - tchau
+      - até mais tarde
+      - fui
+      - flw
+      - até amanhã
+
+  - intent: affirm
+    examples: |
+      - sim
+      - s
+      - com certeza
+      - claro
+      - me parece bom
+      - correto
+      - gostaria
+
+  - intent: deny
+    examples: |
+      - não
+      - n
+      - nunca
+      - Eu acho que não
+      - não gosto disso
+      - sem chance
+      - claro que não
+
+  - intent: mood_great
+    examples: |
+      - perfeito
+      - bem
+      - sensacional
+      - me sentindo um rei
+      - maravilhoso
+      - estou me sentindo muito bem
+      - eu estou bem
+      - eu estou ótimo
+      - eu estou indo salvar o mundo
+
+  - intent: mood_unhappy
+    examples: |
+      - meu dia foi horrivel
+      - Eu estou triste
+      - Eu não me sinto muito bem
+      - Estou desapontado
+      - Muito triste
+      - estou tao triste
+      - triste
+      - não estou feliz
+      - nada bem
+      - não estou bem
+
+  - intent: bot_challenge
+    examples: |
+      - você é um bot?
+      - você é humano?
+      - voce é um bot?
+      - com quem eu estou falando?
+      - eu estou falando com um bot?
+      - eu estou falando com uma pessoa?
+      - chame seu chefe para eu falar com ele
+      - qual o seu nome?
+
+  - intent: creator
+    examples: |
+      - quem criou você?
+      - quem fez vc?
+      - quem fez você?
+      - quem é o seu pai?
+      - qual o nome do seu criador?
+
+  - intent: what_i_do
+    examples: |
+      - o que voce pode fazer?
+      - o que você sabe?
+      - você é um bot sobre o que?
+
+  - intent: O_que_é_html?
+    examples: |
+      - o que é html?
+      - o que significa HTML?
+      - o que quer dizer a sigla HTML?
+      - o que é html?
+
+  - intent: Um_documento_HTML_simples
+    examples: |
+      - Um documento HTML simples
+      - Como é um documento html?
+      - Como é a base de um html?
+
+  - intent: O_que_é_um_elemento_HTML?
+    examples: |
+      - o que é um elemento html?
+      - qual a definicao de elemento html
+      - exemplo de elementos html
+
+  - intent: Estrutura_da_página_HTML
+    examples: |
+      - Estrutura de uma pagina html
+      - exemplo de uma estrutura html
+      - exemplo de um HTML
+
+  - intent: HTML_HISTÓRIA
+    examples: |
+      - História do HTML
+      - quando surgiu o html?
+      - como surgiu o HTML?
+      - em que ano inventaram o html?
+
+  - intent: Tag_de_comentário_html
+    examples: |
+      - Tag de comentário html
+      - como fazer comentarios em html
+      - comentário em html
+      - tag de comentario
+
+  - intent: Adicione_comentários
+    examples: |
+      - como adicionar comentarios em html
+      - fazer comentario
+      - exemplo de comentario em HTML
+
+  - intent: Ocultar_conteúdo
+    examples: |
+      - como esconder conteudo em html
+      - esconder conteudo
+
+  - intent: Ocultar_conteúdo_embutido
+    examples: |
+      - ocultar conteudo inline
+      - como ocultar conteudo inline
+
+  - intent: O_que_é_CSS?
+    examples: |
+      - o que é css
+      - qual o significado de CSS
+      - o quer dizer a sigla css
+
+  - intent: Usando_CSS
+    examples: |
+      - como usar css com html
+      - como utilizar css dentro do html
+
+  - intent: CSS_embutido
+    examples: |
+      - como colocar css direto em uma tag
+      - como utilizar css inline
+
+  - intent: CSS_interno
+    examples: |
+      - como usar a tag style
+      - tag style
+      - tag <style>
+      - css interno
+
+  - intent: CSS_externo
+    examples: |
+      - como usar css em um arquivo separado?
+      - link para css
+      - arquivo css
+
+  - intent: Cores_CSS,_fontes_e_tamanhos
+    examples: |
+      - propriedades do css
+      - para que usar css
+      - o que o css faz?
+
+  - intent: Fronteira_do_CSS
+    examples: |
+      - como colocar borda em elemento
+      - css border
+      - definir borda
+
+  - intent: CSS_preenchimento
+    examples: |
+      - padding css
+      - como definir padding
+      - o que é padding?
+
+  - intent: Margem_CSS
+    examples: |
+      - margin css
+      - como definir margin
+      - o que é margin?
+      - margem css
+      - como definir margem
+      - o que é margem?
+
+  - intent: Link_para_CSS_externo
+    examples: |
+      - como definir o link para um arquivo css
+      - como chamar um arquivo css externo
+
+  - intent: Resumo_do_capítulo
+    examples: |
+      - resumo sobre CSS
+      - resumo basico sobre css
+      - css resumo
+
+  - intent: Exercício_2
+    examples: |
+      - exercicios de css
+      - css exercicios
+
+  - intent: Tags_de_estilo_HTML
+    examples: |
+      - tags de estilo para html
+      - como colocar tags de estilo para html
+
+  - intent: Links_HTML_-_Hiperlinks
+    examples: |
+      - links em html
+      - link html
+
+  - intent: Links_html_-_sintaxe
+    examples: |
+      - tag a
+      - tag <a>
+      - tag de link para html
+      - exemplo de link em html
+
+  - intent: Links_HTML_-_o_atributo_de_destino
+    examples: |
+      - tipos de target de link
+      - target link
+
+  - intent: URLs_absolutos_vs._URLs_relativos
+    examples: |
+      - diferença de url absoluta e relativa
+      - url absoluta
+      - url relativa
+
+  - intent: Links_HTML_-_Use_uma_imagem_como_um_link
+    examples: |
+      - imagem como link
+      - usar imagem como link
+      - exemplo de imagem como link
+
+  - intent: Link_para_um_endereço_de_e_-mail
+    examples: |
+      - link para email
+      - email
+      - mailto
+      - exemplo de link para email
+
+  - intent: Botão_como_um_link
+    examples: |
+      - como usar botao para redirecionar
+      - botao para redirecionar
+      - exemplo de botao para redirecionar
+
+  - intent: Títulos_de_link
+    examples: |
+      - para que serve titulos em links?
+      - titulo nos links
+      - exemplo de titulo nos links
+      - title em link
+
+  - intent: Mais_sobre_URLs_absolutos_e_URLs_relativos
+    examples: |
+      - exemplos de url absolutas e relativas
+      - url absoluta exemplo
+      - url relativa exemplo
+
+  #aqui
+  - intent: Resumo_do_capítulo_2
+    examples: |
+      - resumo sobre links
+      - link resumo
+
+  - intent: Tags_de_link_HTML
+    examples: |
+      - tags para links
+      - tag link
+
+  - intent: Parágrafos_HTML
+    examples: |
+      - paragrafo
+      - parágrafo
+      - como fazer um paragrafo em html
+      - tag p
+      - tag <p>
+      - definiçao de um paragrafo
+      - elemento p
+
+  - intent: Display_html
+    examples: |
+      - exibiçao do html
+      - display html
+      - tamanho de tela faz diferença?
+
+  - intent: Regras_horizontais_HTML
+    examples: |
+      - como fazer uma linha horizontal
+      - tag hr
+      - tag <hr>
+      - definiçao de uma linha horizontal
+
+  - intent: Quebras_de_linha_HTML
+    examples: |
+      - como quebrar a linha ?
+      - quebra de linha em html
+      - quebra de linha em html
+      - tag br
+      - tag <br>
+
+  - intent: O_problema_do_poema
+    examples: |
+      - problema de fazer um poema
+      - pq o texto nao fica igual eu coloco
+
+  - intent: Solução_-_o_elemento_html_<pre>
+    examples: |
+      - como fazer o texto ficar igual eu escrevo?
+      - como manter a formataçao em que escrevi?
+
+  - intent: Exercício_3
+    examples: |
+      - exercicio de paragrafo
+      - p exercicio
+      - exercicio de parágrafo
+
+  - intent: Referência_de_tag_html
+    examples: |
+      - tags de referencia
+      - como fazer tags de referencia
+
+  - intent: Atributos_HTML
+    examples: |
+      - o que são atributos html
+      - atributos html
+
+  - intent: O_atributo_href
+    examples: |
+      - href
+      - como usar href?
+      - como definir um link?
+
+  - intent: O_atributo_src
+    examples: |
+      - src
+      - como usar src?
+      - como colocar imagem ?
+      - colocar imagem
+
+  - intent: Os_atributos_de_largura_e_altura
+    examples: |
+      - atributo width no html
+      - atributo height no html
+      - width em tag img
+      - height em tag img
+      - definir tamanho de uma imagem
+      - como definir tamanho da imagem em html
+
+  - intent: O_atributo_alt
+    examples: |
+      - atributo alt
+      - pra que usar alt ?
+      - texto alternativo para imagens
+
+  - intent: O_atributo_de_estilo
+    examples: |
+      - style inline
+      - como usar style inline
+      - usar style dentro das tags
+
+  - intent: O_atributo_lang
+    examples: |
+      - atributo lang
+      - pra que serve o lang?
+
+  - intent: O_atributo_do_título
+    examples: |
+      - definir o titulo para uma tag
+      - como definir o titulo de uma tag
+
+  - intent: Sugerimos:_sempre_use_atributos_minúsculos
+    examples: |
+      - como usar os atributos?
+      - como fazer atributos
+      - case dos atributos
+      - atributos em maiusculo ou minusculo?
+
+  - intent: Sugerimos:_sempre_citar_valores_de_atributo
+    examples: |
+      - dicas de uso sobre atributos nao ser vazio
+      - usar atributos sempre default?
+      - usar atributos vazios?
+
+  - intent: Citações_únicas_ou_duplas?
+    examples: |
+      - aspas simples ou duplas?
+      - como usar aspas dentro de aspas?
+      - como usar aspas dentro de um texto
+
+  - intent: Resumo_do_capítulo_3
+    examples: |
+      - resumo sobre atributos
+      - atributos resumo
+
+  - intent: Exercício_4
+    examples: |
+      - exercicios sobre atributos do html
+      - exercicios sobre atributos do html2
+
+  - intent: Referência_de_atributo_HTML
+    examples: |
+      - referencia dos atributos
+      - lista de todos os atributos
+
+  - intent: Titular_2
+    examples: |
+      - titular um
+      - titular dois
+
+  - intent: Cabeças_de_HTML
+    examples: |
+      - como fazer um titulo em html
+      - tags de titulos
+      - como usar tags de titulos
+      - tag h1
+      - tag h2
+      - tag h3
+      - tag h4
+      - tag h5
+      - tag h6
+      - tag h1, h2, h3, h4, h5, h6
+      - tags de titulo
+
+  - intent: Os_títulos_são_importantes
+    examples: |
+      - por que usar tags de titulos?
+      - pra que usar titulos?
+      - qual a importancia de usar titulos?
+
+  - intent: Títulos_maiores
+    examples: |
+      - definir tamanho para os titulos
+      - definir tamanho para as tags de titulos
+      - definir tamanho do h1
+      - definir tamanho do h2
+
+  - intent: Exercício_5
+    examples: |
+      - exercicio sobre titulos
+      - exercicio sobre tags de titulos
+
+  - intent: Referência_de_tag_html_2
+    examples: |
+      - mais informaçoes sobre tags de referencia
+      - informaçoes  diversas sobre tags de referencia
+  #aqui
+  - intent: Elementos_html
+    examples: |
+      - o que é um elemento html
+      - o que sao elementos
+      - o que sao elementos html
+
+  - intent: Elementos_HTML_aninhados
+    examples: |
+      - o que é aninhamento de elementos?
+      - elementos dentro de outros elementos
+
+  - intent: Nunca_pule_a_etiqueta_final
+    examples: |
+      - como usar as tags html
+      - regras de uso das tags html
+
+  - intent: Elementos_HTML_vazios
+    examples: |
+      - existem elementos que nao fecham as tags?
+      - elementos vazios
+
+  - intent: HTML_não_é_sensível_ao_caso
+    examples: |
+      - html é case sensitive?
+      - diferencia miuscula de minuscula?
+      - maiusculas ou minusculas?
+
+  - intent: Referência_de_tag_html_3
+    examples: |
+      - referencias tag 3
+      - referencias tag 4
+
+  - intent: O_atributo_de_estilo_html
+    examples: |
+      - atributo de estilo
+      - style atributo
+
+  - intent: Cor_de_fundo
+    examples: |
+      - como colocar uma cor de fundo
+      - como colocar um background-color
+      - como colocar um background color
+      - como colocar uma cor de background
+      - background-color
+
+  - intent: Cor_do_texto
+    examples: |
+      - como mudar a cor do texto
+      - trocar cor de texto
+      - alterar cor do texto
+      - color
+
+  - intent: Fontes
+    examples: |
+      - como alterar a fonte
+      - como mudar o tipo de letra
+      - como trocar a fonte
+      - font family
+      - font-family
+
+  - intent: Tamanho_do_texto
+    examples: |
+      - font-size
+      - tamanho da fonte
+      - tamanho do texto
+      - definir tamanho do texto
+
+  - intent: Alinhamento_de_texto
+    examples: |
+      - como alinhar o texto?
+      - alinhar texto
+      - text-align
+
+  - intent: Resumo_do_capítulo_4
+    examples: |
+      - resumo de estilo de fonte
+      - resumo de estilo de texto
+
+  - intent: Exercício_6
+    examples: |
+      - exercico de estilo de fontes
+      - exercício de estilo de texto
+
+  - intent: Documentos_HTML
+    examples: |
+      - documento html
+      - exemplo de documento html
+
+  - intent: A_declaração_<!_Doctype>
+    examples: |
+      - pra que server doctype
+      - como usar doctype
+      - <!DOCTYPE>
+      - <!DOCTYPE html>
+
+  - intent: Cabeças_de_HTML_2
+    examples: |
+      - importancia de cabeçalhos
+      - ordem de importancia das tahs h
+
+  - intent: Parágrafos_HTML_2
+    examples: |
+      - tag de paragrafo resumo
+      - tag de paragrafo resumo opcao 2
+
+  - intent: Links_HTML
+    examples: |
+      - resumo link
+      - link resumido
+
+  - intent: Imagens_HTML
+    examples: |
+      - resumo imagens
+      - imagem resumida
+
+  - intent: Como_ver_a_fonte_HTML
+    examples: |
+      - como ver o html de uma pagina
+      - como ver o html
+      - como usar o inspecionar
+
+  - intent: Elementos_de_formatação_HTML
+    examples: |
+      - quais sao os elementos de formatacao de texto do html
+      - formatar texto
+      - elementos de formatação
+
+  - intent: Html_<b>_e_<strong>_elementos
+    examples: |
+      - texto em negrito
+      - tag b
+      - tag strong
+      - tag <b>
+      - tag <strong>
+      - bold
+
+  - intent: Html_<i>_e_<em>_elementos
+    examples: |
+      - texto em italico
+      - tag i
+      - tag em
+      - tag <i>
+      - tag <em>
+      - italic
+
+  - intent: Elemento_html_<mall>
+    examples: |
+      - como colocar um texto pequeno
+      - definir texto pequeno
+      - tag <small>
+      - tag small
+      - small
+
+  - intent: Elemento_html_<sk>
+    examples: |
+      - <mark>
+      - definir marcador
+      - grifar texto
+      - marcartexto
+      - marcatexto
+
+  - intent: Elemento_html_<del>
+    examples: |
+      - <del>
+      - deletar texto
+      - tag de deletar texto
+      - riscar texto
+
+  - intent: Elemento_html_<ins>
+    examples: |
+      - sublinhar texto
+      - <ins>
+
+  - intent: Elemento_html_<subs>
+    examples: |
+      - texto pequeno em baixo
+      - definir texto pequeno abaixo
+      - tag <subs>
+
+  - intent: Elemento_html_<pup>
+    examples: |
+      - texto em cima
+      - <sup>
+
+  - intent: Exercício_7
+    examples: |
+      - exercicio 7
+      - definir exercício 7
+
+  - intent: Elementos_de_formatação_de_texto_html
+    examples: |
+      - resumo formataçao
+      - formataçao de texto resumida
+
+  - intent: Imagens_html_sintaxe
+    examples: |
+      - tag img
+      - tag <img>
+      - como adicionar uma imagem
+      - sintaxe de uma img
+      - sintaxe tag img
+
+  - intent: O_atributo_src_2
+    examples: |
+      - atributo src da img
+      - src da imagem
+
+  - intent: O_atributo_alt_2
+    examples: |
+      - atributo alt da img
+      - alt da imagem
+      - o que faz o alt em uma imagem?
+  #aqui
+  - intent: Tamanho_da_imagem_-_largura_e_altura
+    examples: |
+      - definir largura e altura de imagem
+      - width e height em img
+      - width e height em imagem
+
+  #aqui
+  - intent: Largura_e_altura,_ou_estilo?
+    examples: |
+      - o que usar, largura, altura ou estilo?
+      - quais atributos usar para definir altura e largura de imagem?
+
+  - intent: Imagens_em_outra_pasta
+    examples: |
+      - como acessar imagens em outras pastas?
+      - como acessar imagens em outros diretórios?
+      - imagens de outros diretórios
+      - imagens de outras pastas
+
+  - intent: Imagens_em_outro_servidor_site
+    examples: |
+      - como acessar imagens de outros sites
+      - como acessar imagens de outros servidores?
+      - imagens de outros sites
+      - imagens de outras servidores
+
+  - intent: Imagens_animadas
+    examples: |
+      - como adicionar gif
+      - .gif
+      - imagens animadas
+
+  - intent: Imagem_como_um_link
+    examples: |
+      - usar uimagem como link
+      - como fazer uma imagem ser um link?
+      - clicar na imagem como link
+
+  - intent: Imagem_flutuante
+    examples: |
+      - float imagem
+      - imagem float
+      - como fazer uma imagem flutuar na tela
+      - exemplo de imagem flutuante
+
+  - intent: Formatos_de_imagem_comuns
+    examples: |
+      - quais sao os formatos de imagens
+      - quais sao os formatos mais comuns de imagens
+      - formatos de imagens
+
+  - intent: Resumo_do_capítulo_5
+    examples: |
+      - resumo sobre tag img
+      - resumo sobre imagens
+
+  - intent: Exercício_8
+    examples: |
+      - exercicio sobre tag img
+      - exercicio sobre imagens
+
+  - intent: Tags_de_imagem_HTML
+    examples: |
+      - resumo das tags de imagem do html
+      - tag de imagem existentes no html
+
+  - intent: Imagem_de_fundo_em_um_elemento_HTML
+    examples: |
+      - como definir uma imagem como background
+      - como adicionar uma imagem como background
+      - imagem como fundo de um elemento
+      - imagem como fundo de uma div
+      - imagem como backgound de uma div
+
+  - intent: Imagem_de_fundo_em_uma_página
+    examples: |
+      - como colocar uma imagem de findo em uma página
+      - como colocar uma imagem de fundo em uma pagina
+      - como colocar uma imagem de back ground da pagina inteira
+
+  - intent: fundo_de_repetição
+    examples: |
+      - propriedade repeat do backgound
+      - propriedade repeat
+      - background repeat
+      - repetir imagem de fundo
+      - repetir imagem de fundo de uma div
+
+  - intent: Tampa_de_fundo
+    examples: |
+      - propriedade cover do backgound
+      - propriedade cover
+      - background cover
+      - imagem de fundo ter cover
+      - colocar cover em imagem de fundo de uma div
+
+  - intent: Alongamento_de_fundo
+    examples: |
+      - como esticar imagem de fundo
+      - como esticar background
+      - como cobrir todo espaço com o background?
+
+  - intent: Saiba_mais_CSS
+    examples: |
+      - um pouco mais sobre css
+      - sobre css
+
+  #aqui
+  - intent: Tag_html_tag
+    examples: |
+      - tag html
+      - tag <html>
+
+  - intent: Defina_uma_tabela_HTML
+    examples: |
+      - definicao de uma tabela html
+      - exemplo de uma tabela simples
+      - como definir uma tabela em html
+      - table
+      - tag table
+      - tag <table>
+
+  - intent: Células_da_tabela
+    examples: |
+      - td
+      - tag <td>
+      - celulas de uma tabela
+
+  - intent: Linhas_de_tabela
+    examples: |
+      - tr
+      - tag <tr>
+      - linhas de uma tabela
+      - como colocar linhas em uma tabela
+
+  - intent: Cabeçalhos_de_mesa
+    examples: |
+      - como fazer um cabeçalho de uma tabela
+      - como fazer um cabecalho de uma tabela
+      - th
+      - tag <th>
+
+  - intent: Exercício_9
+    examples: |
+      - exercicios sobre tabela
+      - exercicios sobre tabela dois
+      - exercicios sobre tabela tres
+
+  - intent: Tags_de_tabela_HTML
+    examples: |
+      - resumo sobre tags de tabela
+      - tags de tabela
+
+  - intent: Como_adicionar_uma_fronteira
+    examples: |
+      - como adicionar borda em uma tabela
+      - border table
+      - borda em tabela
+
+  - intent: Fronteiras_de_mesa_em_colapso
+    examples: |
+      - collapse para bordas
+      - como juntas as bordas de uma tabela?
+
+  - intent: Bordas_de_mesa_de_estilo
+    examples: |
+      - como adicionar style a uma tabela
+      - style table
+      - colocar estilo em uma tabela
+
+  - intent: Bordas_de_mesa_redonda
+    examples: |
+      - como arredondar as bordas de uma tabela
+      - arredondar bordas table
+
+  - intent: Fronteiras_de_mesa_pontilhadas
+    examples: |
+      - bordas pontilhadas em tabelas
+      - como colocar bordas pontilhadas em tabelas
+      - tipos de borda para tabela
+      - tipos de borda
+
+  - intent: Cor_da_borda
+    examples: |
+      - mudar cor da borda
+      - cor da borda da tabela
+
+  - intent: Largura_da_tabela_HTML
+    examples: |
+      - largura da tabela
+      - como definir a largura de uma tabela
+      - table width
+
+  - intent: Largura_da_coluna_da_tabela_HTML
+    examples: |
+      - definir largura por coluna
+      - como definir a largura de uma coluna
+      - table column width
+
+  - intent: Altura_da_linha_da_tabela_html
+    examples: |
+      - altura da linha
+      - como definir a altura de uma linha
+      - table row height
+
+  - intent: Exercício_10
+    examples: |
+      - segundo exercicio sobre tabela
+      - segundo exercicio tabela 2
+
+  - intent: Cabeçalhos_de_tabela_HTML
+    examples: |
+      - cabeçalho de tabela
+      - mais sobre cabeçalho
+
+  - intent: Cabeçalhos_de_mesa_vertical
+    examples: |
+      - fazer um cabeçalho vertical
+      - fazer cabecalho na vertical
+
+  - intent: Alinhe_os_cabeçalhos_da_mesa
+    examples: |
+      - como alinhar os cabecalhos
+      - como alinhar os headers
+      - alinhar th
+
+  - intent: Cabeçalho_para_várias_colunas
+    examples: |
+      - definir cabecalho para varias colunas
+      - mesmo cabecalho para mais de uma coluna
+
+  - intent: Legenda_da_mesa
+    examples: |
+      - colocar legenda na tabela
+      - como colocar legenda na tabela
+      - tag caption
+      - caption table
+
+  - intent: Exercício_11
+    examples: |
+      - exercicios sobre tabela 2
+      - exercicios tabela 2
+
+  - intent: Tabela_HTML_-_preenchimento_de_células
+    examples: |
+      - padding em celulas da tabela
+      - tabela celulas padding
+      - adicionar padding nas celulas da tabela
+      - adicionar padding em celulas da tabela
+
+  - intent: Tabela_HTML_-_Espaçamento_de_células
+    examples: |
+      - definir espacamento entre as celulas
+      - como colocar espaço entre as celulas
+      - colocar espaco entre as celulas
+
+  - intent: Tabela_HTML_-_Colspan
+    examples: |
+      - colspan
+      - colspan em tabela
+      - como funciona o colspan
+
+  - intent: Tabela_HTML_-_lúcteos
+    examples: |
+      - rowspan
+      - rowpan em tabela
+      - como funciona o rowpan
+
+  - intent: Exercício_12
+    examples: |
+      - exercicios sobre tabela 3
+      - exercicios tabela 3
+
+  - intent: Usando_o_atributo_de_classe
+    examples: |
+      - como usar classes
+      - uso de classes
+      - como usar class
+      - uso de class
+
+  #aqui
+  - intent: A_sintaxe_para_aula
+    examples: |
+      - sintaxe para usar classes
+      - sintaxe para usar class
+      - class sintaxe
+
+  - intent: Várias_classes
+    examples: |
+      - multiplas classes
+      - mais de uma classe
+
+  - intent: Elementos_diferentes_podem_compartilhar_a_mesma_classe
+    examples: |
+      - mais de um elemento pode ter a mesma classe?
+      - posso repetir o nome das minhas classes
+      - elementos diferentes podem compartilhar a mesma classe?
+
+  #aqui
+  - intent: Uso_do_atributo_de_classe_em_JavaScript
+    examples: |
+      - como usar as classes em js
+      - uso de classes em js
+      - como utilizar classes no javascript
+      - uso de classes no javascript
+
+  - intent: Resumo_do_capítulo_6
+    examples: |
+      - resumo de class
+      - classes resumo
+
+  - intent: Exercício_13
+    examples: |
+      - exercicio sobre class
+      - exercicio class
+  #aqui
+  - intent: Usando_o_atributo_de_identificação
+    examples: |
+      - uso do id
+      - como usar id
+      - tag id
+      - tag <id>
+      - como usar o id
+
+  - intent: Diferença_entre_classe_e_id
+    examples: |
+      - qual a diferenca entre classe e id
+      - diferenca de class e id
+
+  - intent: Marcadores_HTML_com_ID_e_links
+    examples: |
+      - fazer marcadores com id
+      - como fazer markcs com id
+
+  - intent: Exemplo
+    examples: |
+      - exemplo de marcador com id
+      - marcador id exemlpo
+
+  - intent: Usando_o_atributo_de_identificação_em_javascript
+    examples: |
+      - como isar o id em js
+      - como usar o id em javascript
+      - uso do id em js
+      - uso do id em javascript
+
+  - intent: Resumo_do_capítulo_7
+    examples: |
+      - resumo sobre id
+      - id resumo
+
+  - intent: Exercício_14
+    examples: |
+      - exercicio sobre id
+      - exercicio id
+
+  - intent: Tabela_html_-_listras_de_zebra
+    examples: |
+      - pintar linhas diferentes da tabela
+      - tabela estilo zebra
+      - background color em linhas intercaladas
+      - linhas intercaladas tabela
+
+  - intent: Tabela_html_-_listras_verticais_de_zebra
+    examples: |
+      - pintar colunas diferentes da tabela
+      - tabela estilo zebra vertical
+      - background color em colunas intercaladas
+      - colunas intercaladas tabela
+
+  - intent: Combine_listras_de_zebra_verticais_e_horizontais
+    examples: |
+      - combinar cor das linhas e colunas de tabela
+      - tabela estilo zebra vertical e horizontal
+
+  - intent: Divisores_horizontais
+    examples: |
+      - fazer tabela com divisor horizontal apenas
+      - tabela com divisor horizontal
+      - tabela só com linhas dividindo
+
+  - intent: Tabela_em_paurna
+    examples: |
+      - hover em linhas da tabela
+      - linhas destacadas ao passar o mouse
